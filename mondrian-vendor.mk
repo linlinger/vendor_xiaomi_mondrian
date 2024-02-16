@@ -3355,7 +3355,9 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
+    DaxUI \
     WfdCommon \
+    daxService \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \

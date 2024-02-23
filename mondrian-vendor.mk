@@ -9,20 +9,25 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mondrian/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/mondrian/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/mondrian/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/xiaomi/mondrian/proprietary/system/etc/permissions/com.qualcomm.qti.Performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.Performance.xml \
+    vendor/xiaomi/mondrian/proprietary/system/etc/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.UxPerformance.xml \
     vendor/xiaomi/mondrian/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/mondrian/proprietary/system/lib/libdolbyottcontrol.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdolbyottcontrol.so \
     vendor/xiaomi/mondrian/proprietary/system/lib/libdovi_omx.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdovi_omx.so \
-    vendor/xiaomi/mondrian/proprietary/system/lib/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/mondrian/proprietary/system/lib64/libdolbyottcontrol.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdolbyottcontrol.so \
     vendor/xiaomi/mondrian/proprietary/system/lib64/libdovi_omx.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdovi_omx.so \
-    vendor/xiaomi/mondrian/proprietary/system/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
+    vendor/xiaomi/mondrian/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
+    vendor/xiaomi/mondrian/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
     vendor/xiaomi/mondrian/proprietary/system_ext/bin/tcmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd \
     vendor/xiaomi/mondrian/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
+    vendor/xiaomi/mondrian/proprietary/system_ext/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/perfservice.rc \
+    vendor/xiaomi/mondrian/proprietary/system_ext/etc/init/qspmsvc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspmsvc.rc \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/xiaomi/mondrian/proprietary/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
@@ -31,13 +36,28 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
+    vendor/xiaomi/mondrian/proprietary/system_ext/etc/seccomp_policy/perfservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/perfservice.policy \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/xiaomi/mondrian/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libbeluga.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libbeluga.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libcomposerextn.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libcomposerextn.qti.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libdolphin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdolphin.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/liblayerext.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/liblayerext.qti.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libpenguin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libpenguin.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libpenguin_impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libpenguin_impl.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libqape.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqape.qti.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqspmsvc.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libqti-at.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-at.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libqti-iopd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-iopd-client_system.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-perfd-client_system.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti_performance.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libskewknob_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libskewknob_system.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/libsmomoconfig.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsmomoconfig.qti.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdcommonutils.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdconfigutils.so \
@@ -54,21 +74,41 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.iop@2.0.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.0.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.1.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.2.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.3.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libbeluga.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libbeluga.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libcomposerextn.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomposerextn.qti.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libdolphin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdolphin.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmframework.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmtcm.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/liblayerext.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblayerext.qti.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libpenguin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpenguin.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libpenguin_impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpenguin_impl.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libqape.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqape.qti.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqspmsvc.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libqti-at.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-at.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libqti-iopd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-iopd-client_system.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-perfd-client_system.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti_performance.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libskewknob_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libskewknob_system.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libsmomoconfig.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsmomoconfig.qti.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
@@ -86,8 +126,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dpmservice@1.1.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.0.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.1.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.2.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.3.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
+    vendor/xiaomi/mondrian/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/mondrian/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/mondrian/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
     vendor/xiaomi/mondrian/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
@@ -1134,170 +1180,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mondrian/proprietary/vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6750/WCNSS_qcom_cfg.ini \
     vendor/xiaomi/mondrian/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/xiaomi/mondrian/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/0_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/0_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/etc/vibrator/effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_0.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/101_offlineCountdown_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/101_offlineCountdown_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/102_sceneBombInjury_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/102_sceneBombInjury_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/103_sceneBomb_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/103_sceneBomb_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/104_doorOpen_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/104_doorOpen_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/106_sceneStep_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/106_sceneStep_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/107_crawl_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/107_crawl_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/108_scopeOn_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/108_scopeOn_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/109_scopeOff_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/109_scopeOff_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/10_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/10_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/110_magazineQuick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/110_magazineQuick_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/111_grenade_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/111_grenade_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/112_sceneGetshot_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/112_sceneGetshot_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/113_grenadeExplosion_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/113_grenadeExplosion_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/114_punch_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/114_punch_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/115_pan_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/115_pan_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/116_bandage_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/116_bandage_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/118_sceneJump_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/118_sceneJump_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/119_vehiclePlane_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/119_vehiclePlane_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/11_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/11_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/120_sceneOpenparachute_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/120_sceneOpenparachute_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/121_sceneCloseparachute_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/121_sceneCloseparachute_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/122_vehicleCollision_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/122_vehicleCollision_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/123_vehicleBuggy_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/123_vehicleBuggy_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/124_vehicleDacia_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/124_vehicleDacia_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/125_vehicleMoto_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/125_vehicleMoto_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/126_firearmsAkm_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/126_firearmsAkm_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/127_firearmsM16a4_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/127_firearmsM16a4_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/128_firearmsAwm_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/128_firearmsAwm_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/12_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/12_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/130_firearmsMini14_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/130_firearmsMini14_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/131_firearmsVss_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/131_firearmsVss_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/132_firearmsQbz_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/132_firearmsQbz_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/133_firearmsUmp9_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/133_firearmsUmp9_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/134_firearmsDp28_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/134_firearmsDp28_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/135_firearmsS1897_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/135_firearmsS1897_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/137_firearmsP18c_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/137_firearmsP18c_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/13_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/13_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/140_cfmKillOne_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/140_cfmKillOne_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/141_cfmHeadshot_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/141_cfmHeadshot_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/142_cfmMultiKill_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/142_cfmMultiKill_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/143_cfmKillOneStrong_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/143_cfmKillOneStrong_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/144_cfmHeadshotStrong_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/144_cfmHeadshotStrong_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/145_cfmMultiKillStrong_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/145_cfmMultiKillStrong_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/146_cfmWeaponGrenadeExplode_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/146_cfmWeaponGrenadeExplode_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/147_cfmWeaponGrenadeKillOne_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/147_cfmWeaponGrenadeKillOne_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/148_cfmImpactFleshNormal_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/148_cfmImpactFleshNormal_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/149_cfmWeaponC4Installed_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/149_cfmWeaponC4Installed_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/14_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/14_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/150_cfmHeroAppear_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/150_cfmHeroAppear_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/151_cfmUIRewardOpenBox_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/151_cfmUIRewardOpenBox_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/152_cfmUIRewardTask_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/152_cfmUIRewardTask_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/153_cfmWeaponBLTShoot_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/153_cfmWeaponBLTShoot_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/154_Atlantis_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/154_Atlantis_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/155_DigitalUniverse_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/155_DigitalUniverse_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/156_Reveries_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/156_Reveries_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/157_fodMotionTriang_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/157_fodMotionTriang_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/158_fodMotionFlare_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/158_fodMotionFlare_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/159_fodMotionRipple_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/159_fodMotionRipple_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/15_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/15_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/160_fodMotionSpiral_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/160_fodMotionSpiral_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/161_gameboxLaunch_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/161_gameboxLaunch_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/162_GestureBackPull_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/162_GestureBackPull_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/163_GestureBackRelease_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/163_GestureBackRelease_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/164_alert_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/164_alert_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/165_feedbackNegativeLight_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/165_feedbackNegativeLight_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/166_feedbackNeutral_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/166_feedbackNeutral_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/167_feedbackPositive_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/167_feedbackPositive_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/168_fingerprintRecord_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/168_fingerprintRecord_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/169_lockdown_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/169_lockdown_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/16_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/16_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/171_todoAlldone_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/171_todoAlldone_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/172_uninstallAnimationIcon_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/172_uninstallAnimationIcon_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/17_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/17_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/18_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/18_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/192_hapticsVideo_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/192_hapticsVideo_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/19_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/19_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/1_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/1_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/etc/vibrator/effect_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_1.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/20_ringTone4_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/20_ringTone4_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/23_Candy_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/23_Candy_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/24_Carousel_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/24_Carousel_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/25_Celesta_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/25_Celesta_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/26_Childhood_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/26_Childhood_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/27_Country_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/27_Country_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/28_Cowboy_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/28_Cowboy_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/2_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/2_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/etc/vibrator/effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_2.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/30_Fairyland_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/30_Fairyland_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/31_Fantasy_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/31_Fantasy_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/32_FieldTrip_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/32_FieldTrip_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/33_Glee_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/33_Glee_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/35_IceLatte_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/35_IceLatte_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/36_KungFu_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/36_KungFu_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/38_Lollipop_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/38_Lollipop_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/39_MiMix2_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/39_MiMix2_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/3_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/3_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/etc/vibrator/effect_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_3.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/40_Mi_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/40_Mi_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/41_MiHouse_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/41_MiHouse_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/42_MiJazz_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/42_MiJazz_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/43_MiRemix_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/43_MiRemix_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/44_MountainSpring_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/44_MountainSpring_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/45_Orange_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/45_Orange_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/46_WindChime_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/46_WindChime_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/47_SpaceAge_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/47_SpaceAge_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/48_ToyRobot_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/48_ToyRobot_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/49_Vigor_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/49_Vigor_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/4_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/4_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/etc/vibrator/effect_4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_4.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/50_Bottle_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/50_Bottle_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/51_Bubble_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/51_Bubble_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/521_AcousticGuitar_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/521_AcousticGuitar_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/52_Bullfrog_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/52_Bullfrog_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/53_Burst_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/53_Burst_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/54_Chirp_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/54_Chirp_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/55_Clank_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/55_Clank_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/56_Crystal_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/56_Crystal_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/57_FadeIn_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/57_FadeIn_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/58_FadeOut_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/58_FadeOut_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/59_Flute_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/59_Flute_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/5_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/5_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/etc/vibrator/effect_5.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_5.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/60_Fresh_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/60_Fresh_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/61_Frog_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/61_Frog_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/62_Guitar_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/62_Guitar_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/63_Harp_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/63_Harp_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/64_IncomingMessage_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/64_IncomingMessage_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/65_MessageSent_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/65_MessageSent_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/66_Moment_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/66_Moment_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/67_NotificationXylophone_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/67_NotificationXylophone_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/68_Potion_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/68_Potion_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/69_Radar_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/69_Radar_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/6_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/6_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/70_Spring_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/70_Spring_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/71_Swoosh_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/71_Swoosh_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/72_GestureUpSlide_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/72_GestureUpSlide_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/73_fodMotionPlanet_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/73_fodMotionPlanet_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/74_ChargeWire_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/74_ChargeWire_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/75_ChargeWireless_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/75_ChargeWireless_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/76_UnlockFailed_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/76_UnlockFailed_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/77_fodMotion1_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/77_fodMotion1_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/78_fodMotion2_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/78_fodMotion2_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/79_fodMotion3_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/79_fodMotion3_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/7_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/7_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/80_fodMotion4_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/80_fodMotion4_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/81_fodMotionAurora_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/81_fodMotionAurora_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/82_FaceIDWrong2_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/82_FaceIDWrong2_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/83_uninstallAnimation_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/83_uninstallAnimation_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/84_uninstallDialog_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/84_uninstallDialog_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/85_screenshot_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/85_screenshot_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/86_lockscreenCameraEntry_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/86_lockscreenCameraEntry_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/87_launcherEdit_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/87_launcherEdit_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/88_launcherIconSelection_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/88_launcherIconSelection_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/8_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/8_seqbinwav_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/90_taskCleanAll_P_Rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/90_taskCleanAll_P_Rtp.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/91_newIconFolder_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/91_newIconFolder_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/92_notificationRemove_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/92_notificationRemove_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/93_notificationCleanall_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/93_notificationCleanall_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/96_nfcCard_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/96_nfcCard_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/98_nfcCardSlow_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/98_nfcCardSlow_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/99_POCO_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/99_POCO_P_RTP.bin \
-    vendor/xiaomi/mondrian/proprietary/vendor/firmware/9_seqbinwav_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/9_seqbinwav_P_RTP.bin \
+    vendor/xiaomi/mondrian/proprietary/vendor/firmware/0_click_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/0_click_P_RTP.bin \
+    vendor/xiaomi/mondrian/proprietary/vendor/firmware/1_doubelClick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/1_doubelClick_P_RTP.bin \
+    vendor/xiaomi/mondrian/proprietary/vendor/firmware/2_tick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/2_tick_P_RTP.bin \
+    vendor/xiaomi/mondrian/proprietary/vendor/firmware/3_thud_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/3_thud_P_RTP.bin \
+    vendor/xiaomi/mondrian/proprietary/vendor/firmware/4_pop_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/4_pop_P_RTP.bin \
+    vendor/xiaomi/mondrian/proprietary/vendor/firmware/5_heavyClick_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/5_heavyClick_P_RTP.bin \
     vendor/xiaomi/mondrian/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/xiaomi/mondrian/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/xiaomi/mondrian/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
@@ -3351,13 +3239,16 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     QtiTelephony \
     QtiTelephonyService \
+    DaxUI \
     WfdService \
+    daxService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    DaxUI \
+    QPerformance \
+    QXPerformance \
+    UxPerformance \
     WfdCommon \
-    daxService \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimservicelibrary \

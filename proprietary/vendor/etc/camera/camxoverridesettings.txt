@@ -16,7 +16,7 @@ raiserecoverysigabrt=FALSE
 offlineLoggerEnableBackupLog=FALSE
 enableCameraCoreDumpBinary=FALSE
 enableCameraCoreDumpText=FALSE
-numConsecutiveRecovery=10
+numConsecutiveRecovery=5
 
 # SAT
 enablePostZoomFOV=1

@@ -6,3 +6,6 @@
 on early-boot
 write /dev/ipa 1
 
+on post-fs-data
+write /sys/kernel/va-minidump/ipa_mini/enable 1
+write /sys/kernel/va-minidump/gsi_mini/enable 1

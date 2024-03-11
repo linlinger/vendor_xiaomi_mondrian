@@ -103,20 +103,20 @@
         "coef_0_a":{ "type": "flt", "ver": "1",
                      "data": "1.0"
                    },
-        "coef_1_a":{ "type": "flt", "ver": "3",
-                     "data": "-0.374"
+        "coef_1_a":{ "type": "flt", "ver": "2",
+                     "data": "-2.043"
                    },
-        "dgf_a":{ "type": "flt", "ver": "3",
-                  "data": "6.558"
+        "dgf_a":{ "type": "flt", "ver": "2",
+                  "data": "7.995"
                 },
-        "coef_0_b":{ "type": "flt", "ver": "3",
-                     "data": "0.883"
+        "coef_0_b":{ "type": "flt", "ver": "2",
+                     "data": "0.596"
                    },
-        "coef_1_b":{ "type": "flt", "ver": "3",
-                     "data": "-0.246"
+        "coef_1_b":{ "type": "flt", "ver": "2",
+                     "data": "-0.159"
                    },
-        "dgf_b":{ "type": "flt", "ver": "3",
-                  "data": "6.558"
+        "dgf_b":{ "type": "flt", "ver": "2",
+                  "data": "7.995"
                 }
       },
       ".def_config":

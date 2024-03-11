@@ -2,7 +2,7 @@
 <root>
     <color>
         <NodeTree>
-            <NodeName>unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight pwBl videoBox Smartfps TrueTone PaperMode sre AiDisp miBrightness flatmode dither</NodeName>
+            <NodeName>unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight pwBl videoBox Smartfps TrueTone PaperMode sre AiDisp miBrightness flatmode dither colortemp</NodeName>
         </NodeTree>
         <unlimitedCT>
             <unlimitedCTParamName>strength default cold warm uiParamMin paramMax dimmingTime dimmingStep</unlimitedCTParamName>
@@ -355,5 +355,9 @@
             <HistControl>10 30</HistControl>
             <Hist0Thresh>80 90</Hist0Thresh>
         </dither>
+        <colortemp>
+            <colortempParamName>EnableColorTempLut</colortempParamName>
+            <EnableColorTempLut>0</EnableColorTempLut>
+        </colortemp>
     </color>
 </root>

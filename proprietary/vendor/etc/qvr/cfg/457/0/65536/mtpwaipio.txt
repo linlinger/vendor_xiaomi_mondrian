@@ -23,7 +23,7 @@
 #plugin_eye_tracking_lib =
 
 # Host controller Plugin related configurations
-plugin_host_controller_lib = libqvr_hostcontroller_plugin.so
+#plugin_host_controller_lib = libqvr_hostcontroller_plugin.so
 
 # Controls how/when eye tracking is started/stopped:
 #   "default"    : eye tracking mode (enable/disable) must be set prior to
@@ -72,6 +72,7 @@ tracking_camera_hvx_stereo_slave_camera_id = -1
 tracking_camera_default_resolution_mode  = quarter
 tracking_camera_supported_formats        = y8
 tracking_camera_default_frame_format     = y8
+tracking_camera_gamma_blacklevel_cfg     = 0.5:0
 
 # uvc-tracking camera properties
 uvc-tracking_camera_id                  = 1
@@ -94,8 +95,32 @@ uvc-tracking_camera_hvx_sensor          = v4l_ov9282
 uvc-tracking_camera_default_flash_mode  = off
 uvc-tracking_camera_hvx_stereo_slave_camera_id = -1
 uvc-tracking_camera_default_resolution_mode  = full
-uvc-tracking_camera_supported_formats        = y8 depth16
+uvc-tracking_camera_supported_formats        = y8 depth16 yuyv mjpeg
 uvc-tracking_camera_default_frame_format     = y8
+
+# wireless-tracking camera properties
+wireless-tracking_camera_id                  = 1
+wireless-tracking_camera_sensor              = wl_ov9282_stereo
+wireless-tracking_camera_driver              = wireless
+wireless-tracking_camera_res                 = 1280 400 30 30
+wireless-tracking_camera_quarter_res         = 1280 400 30 30
+wireless-tracking_camera_frame_rdi_mode      = false
+wireless-tracking_camera_frame_rdi_bit_depth = 10
+wireless-tracking_camera_rdi_frame_format    = raw10
+wireless-tracking_camera_auto_exposure       = false
+wireless-tracking_camera_hvx_mode            = false
+wireless-tracking_camera_hvx_algo            = qvrcam_receiver
+wireless-tracking_camera_master_only         = false
+wireless-tracking_camera_control_protected   = false
+wireless-tracking_camera_privileged_client   = 0
+# camera logging (disabled, continuous, oneshot)
+wireless-tracking_camera_frame_logging_mode  = disabled
+wireless-tracking_camera_hvx_sensor          = v4l_ov9282
+wireless-tracking_camera_default_flash_mode  = off
+wireless-tracking_camera_hvx_stereo_slave_camera_id = -1
+wireless-tracking_camera_default_resolution_mode  = full
+wireless-tracking_camera_supported_formats        = y8 depth16
+wireless-tracking_camera_default_frame_format     = y8
 
 # uvc-rgb-left camera properties
 uvc-rgb-left_camera_id                      = 2
@@ -119,8 +144,33 @@ uvc-rgb-left_camera_default_flash_mode      = off
 uvc-rgb-left_camera_enable_yuv_ipe_bypass   = false
 uvc-rgb-left_camera_hvx_stereo_slave_camera_id = -1
 uvc-rgb-left_camera_default_resolution_mode    = full
-uvc-rgb-left_camera_supported_formats          = yuv420
+uvc-rgb-left_camera_supported_formats          = yuv420 yuyv mjpeg
 uvc-rgb-left_camera_default_frame_format       = yuv420
+
+# wireless-rgb-left camera properties
+wireless-rgb-left_camera_id                      = 2
+wireless-rgb-left_camera_sensor                  = wl_ov8856
+wireless-rgb-left_camera_driver                  = wireless
+wireless-rgb-left_camera_res                     = 1280 720 30 30
+wireless-rgb-left_camera_quarter_res             = 1280 720 30 30
+wireless-rgb-left_camera_frame_rdi_mode          = false
+wireless-rgb-left_camera_frame_rdi_bit_depth     = 10
+wireless-rgb-left_camera_rdi_frame_format        = raw10
+wireless-rgb-left_camera_auto_exposure           = false
+wireless-rgb-left_camera_hvx_mode                = false
+wireless-rgb-left_camera_hvx_algo                = qvrcam_receiver
+wireless-rgb-left_camera_master_only             = false
+wireless-rgb-left_camera_control_protected       = false
+wireless-rgb-left_camera_privileged_client       = 0
+# camera logging (disabled, continuous, oneshot)
+wireless-rgb-left_camera_frame_logging_mode      = disabled
+wireless-rgb-left_camera_hvx_sensor              = v4l_ov8856
+wireless-rgb-left_camera_default_flash_mode      = off
+wireless-rgb-left_camera_enable_yuv_ipe_bypass   = false
+wireless-rgb-left_camera_hvx_stereo_slave_camera_id = -1
+wireless-rgb-left_camera_default_resolution_mode    = full
+wireless-rgb-left_camera_supported_formats          = yuv420
+wireless-rgb-left_camera_default_frame_format       = yuv420
 
 # uvc-rgb camera properties
 uvc-rgb_camera_id                      = 3
@@ -326,3 +376,6 @@ depth_model_path = /vendor/etc/qvr/depth_model.dlc
 
 # Preferred 3DR frame rate.  System load/performance may limit frame rate.
 3dr_depth_fps = 10
+
+# Remote device parameters
+#remote_device_interface_name = wlan2

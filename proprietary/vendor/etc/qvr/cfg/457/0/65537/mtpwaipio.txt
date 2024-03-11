@@ -1,5 +1,5 @@
 ##############################################################################
-# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 ##############################################################################
@@ -23,7 +23,7 @@
 #plugin_eye_tracking_lib =
 
 # Host controller Plugin related configurations
-plugin_host_controller_lib = libqvr_hostcontroller_plugin.so
+#plugin_host_controller_lib = libqvr_hostcontroller_plugin.so
 
 # Controls how/when eye tracking is started/stopped:
 #   "default"    : eye tracking mode (enable/disable) must be set prior to
@@ -72,6 +72,7 @@ tracking_camera_hvx_stereo_slave_camera_id = -1
 tracking_camera_default_resolution_mode  = quarter
 tracking_camera_supported_formats        = y8
 tracking_camera_default_frame_format     = y8
+tracking_camera_gamma_blacklevel_cfg     = 0.5:0
 
 # uvc-tracking camera properties
 uvc-tracking_camera_id                  = 1
@@ -94,7 +95,7 @@ uvc-tracking_camera_hvx_sensor          = v4l_ov9282
 uvc-tracking_camera_default_flash_mode  = off
 uvc-tracking_camera_hvx_stereo_slave_camera_id = -1
 uvc-tracking_camera_default_resolution_mode  = full
-uvc-tracking_camera_supported_formats        = y8
+uvc-tracking_camera_supported_formats        = y8 depth16 yuyv mjpeg
 uvc-tracking_camera_default_frame_format     = y8
 
 # uvc-rgb-left camera properties
@@ -119,7 +120,7 @@ uvc-rgb-left_camera_default_flash_mode      = off
 uvc-rgb-left_camera_enable_yuv_ipe_bypass   = false
 uvc-rgb-left_camera_hvx_stereo_slave_camera_id = -1
 uvc-rgb-left_camera_default_resolution_mode    = full
-uvc-rgb-left_camera_supported_formats          = yuv420
+uvc-rgb-left_camera_supported_formats          = yuv420 yuyv mjpeg
 uvc-rgb-left_camera_default_frame_format       = yuv420
 
 # uvc-rgb camera properties

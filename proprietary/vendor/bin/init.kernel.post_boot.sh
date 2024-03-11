@@ -100,7 +100,10 @@ function configure_read_ahead_kb_values() {
 		echo $ra_kb > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
 	fi
 	for dm in $dmpts; do
-		echo $ra_kb > $dm
+		if [ `cat $(dirname $dm)/../removable` -eq 0 ]; then
+			echo $ra_kb > $dm
+		fi
+
 	done
 }
 
@@ -124,9 +127,15 @@ function configure_memory_parameters() {
 	# Set allocstall_threshold to 0 for all targets.
 	#
 
+	ProductName=`getprop ro.product.name`
+
 	configure_zram_parameters
 	configure_read_ahead_kb_values
-	echo 100 > /proc/sys/vm/swappiness
+	if [ "$ProductName" == "liuqin" ] || [ "$ProductName" == "yudi" ]; then
+		echo 200 > /proc/sys/vm/swappiness
+	else
+		echo 100 > /proc/sys/vm/swappiness
+	fi
     echo 1 > /proc/sys/vm/watermark_scale_factor
     echo 0 > /proc/sys/vm/watermark_boost_factor
 
@@ -157,13 +166,6 @@ function configure_memory_parameters() {
 	fi
 
 	echo 11584 > /proc/sys/vm/min_free_kbytes
-
-	if [ $RamSizeGB -ge 12 ]; then
-		echo 50 > /proc/sys/vm/watermark_scale_factor
-	elif [ $RamSizeGB -ge 8 ]; then
-		echo 30 > /proc/sys/vm/watermark_scale_factor
-	fi
-
 }
 
 configure_memory_parameters
@@ -189,3 +191,8 @@ case "$chipfamily" in
 	;;
 esac
 
+ProductName=`getprop ro.product.name`
+if [ "$ProductName" == "liuqin" ] || [ "$ProductName" == "yudi" ]; then
+	sleep 600
+	echo 100 > /proc/sys/vm/swappiness
+fi

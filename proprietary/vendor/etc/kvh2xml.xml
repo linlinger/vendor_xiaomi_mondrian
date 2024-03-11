@@ -51,6 +51,8 @@
       <VALUE val="0xa2000006" name="HDMI_Rx"/>
       <VALUE val="0xa2000007" name="Proxy_Rx"/>
       <VALUE val="0xA2000100" name="Speaker_FCT"/>
+      <VALUE val="0xa2000101" name="Speaker_Voice"/>
+      <VALUE val="0xa2000102" name="Handset_Voice"/>
     </KEY>
     <KEY name="DeviceTX" id="0xa3000000" description="Tx Device">
       <VALUE val="0xa3000001" name="Speaker_Mic"/>
@@ -530,5 +532,6 @@
     <TAG id="0xc0001014" name="misound_hph_earcomp_bandgains_l"/>
     <TAG id="0xc0001015" name="misound_hph_earcomp_bandgains_r"/>
     <TAG id="0xc0001044" name="misound_karaoke_vocal_reserved1"/>
+    <TAG id="0xc000340" name="miec_speaker_direction"/>
   </MODULE_TAGS>
 </KEY_DEF>

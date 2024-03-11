@@ -28,6 +28,6 @@
     </Feature>
     <Feature>
         <Name>VendorScenarioPowerOptFeature</Name>
-        <Enable>0</Enable>
+        <Enable>1</Enable>
     </Feature>
 </PowerFeature>

@@ -101,3 +101,4 @@ writev: 1
 restart_syscall: 1
 mkdirat: 1
 statfs: 1
+fsync: 1

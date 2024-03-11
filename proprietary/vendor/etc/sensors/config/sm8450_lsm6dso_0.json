@@ -80,8 +80,8 @@
         "owner": "lsm6dso",
         ".corr_mat":{
           "owner": "lsm6dso",
-          "0_0":{ "type": "flt", "ver": "0",
-            "data": "1.0"
+          "0_0":{ "type": "flt", "ver": "1",
+            "data": "1.017"
           },
           "0_1":{ "type": "flt", "ver": "0",
             "data": "0.0"

@@ -38,7 +38,9 @@
             // this will enable the graphics pipeline for
             // CSC and converting images to other format and
             // Rotating the frame etc
-            "vtxr_enable": true
+            "vtxr_enable": true,
+            // this will enable software I/O chache coherency
+            "sw_cache_coherency": false
         },
         "Presets": {
             // this is used for secure decoding performance boost handling

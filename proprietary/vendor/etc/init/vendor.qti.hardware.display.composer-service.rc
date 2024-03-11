@@ -5,5 +5,6 @@ service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.
     capabilities SYS_NICE
     onrestart restart vendor.displayfeature-hal-1-0
     onrestart restart surfaceflinger
+    onrestart restart feature_enabler_client
     socket pps stream 0660 system system
     writepid /sys/kernel/reserve_pool/pid

@@ -69,6 +69,7 @@ tracking_camera_hvx_stereo_slave_camera_id = -1
 tracking_camera_default_resolution_mode  = quarter
 tracking_camera_supported_formats        = y8
 tracking_camera_default_frame_format     = y8
+tracking_camera_gamma_blacklevel_cfg     = 0.5:0
 
 # 6dof pose logging (disabled, continuous, oneshot)
 tracking_6dof_pose_logging_mode    = disabled

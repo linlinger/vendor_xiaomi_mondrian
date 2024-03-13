@@ -90,7 +90,7 @@ android_app_import {
 }
 
 android_app_import {
-	name: "IFAAService",
+	name: "IFAAServiceMondrian",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/IFAAService/IFAAService.apk",
 	certificate: "platform",

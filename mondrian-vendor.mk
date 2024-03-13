@@ -3173,7 +3173,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.AGMIPC@1.0-impl \
     CACertService \
     CneApp \
-    IFAAService \
+    IFAAServiceMondrian \
     IWlanService \
     SoterService \
     TimeService \
